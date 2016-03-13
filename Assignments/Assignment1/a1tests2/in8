@@ -1,0 +1,8 @@
+show grade comp3512 0 50
+-show grade comp3512 50 90
+showid grade comp3512 0 50
+-showid grade comp3512 0 50
+-showid grade comp3512 50 90
+showid grade comp3512 50 90
+show grade comp3512 50 90
+-show grade comp3512 0 50

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Delete output (my-out*) files from previous tests?"
+echo "Press ctl-c to abort, any other key to delete the files & run tests"
+read x
+rm -f my-out*
+
+for i in `seq 9`; do 
+  ./a1 data < in$i > my-out$i 2> /dev/null
+  cmp out$i my-out$i > /dev/null
+  if [ $? -eq 0 ]; then
+    echo "test $i: passed"
+  else
+    echo "test $i: FAILED"
+  fi
+done
+
