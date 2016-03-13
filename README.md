@@ -1,2 +1,2 @@
-## C++
-## All the labs and completed that were completed in COMP3512;
+# C++
+### All the labs and completed that were completed in COMP3512;
